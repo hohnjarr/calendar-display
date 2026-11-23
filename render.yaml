@@ -5,5 +5,5 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
-      - key: CALENDAR_ICS_URL
+      - key: https://calendar.google.com/calendar/ical/jdharr%40gmail.com/private-933a3545ba995382cc6b0ceeac1c78e0/basic.ics
         sync: false
