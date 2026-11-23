@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: calendar-display
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: CALENDAR_ICS_URL
+        sync: false
